@@ -1,18 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="margin:0;padding:0;background:#06090f;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capacitor Network Simulator</title>
     <style>
-      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      html { background: #06090f; }
-      body { margin: 0; padding: 0; background: #06090f; overflow-x: hidden; }
-      #root { background: #06090f; }
+      html, body, #root {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: #06090f !important;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+      }
     </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="margin:0;padding:0;background:#06090f;">
+    <div id="root" style="background:#06090f;"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
